@@ -1,0 +1,55 @@
+header{
+    position: relative;
+    height: 5rem;
+    background-color: blueviolet;
+}
+.logo{
+    position: absolute;
+    background: none;
+    left: 30%;
+
+    top: 50%;
+    transform: translate(0%,-50%);
+}
+.logo img{
+    width:4rem;
+
+}
+.title{
+    position: absolute;
+    background: none;
+    left: 35%;
+    
+    top: 50%;
+    transform: translate(0%,-50%);
+}
+.pdf-file embed{
+    width: 500px;
+}
+.pdf-name{
+    width: 500px;
+}
+.hr-common{
+    display: none;
+}
+section{
+    float: left;
+    margin-left: 10px;
+}
+main::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+body{
+    position: relative;
+}
+footer{
+ 
+ 
+}
+
+main{
+    background-color: brown;
+    height: 100vh;
+}

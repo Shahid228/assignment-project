@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+body{
+    position: relative;
+}
+section{
+  
+}
+.logo{
+  
+    background-color: coral;
+}
+.center{
+    width: fit-content;
+    margin: auto;
+}
+.logo img{
+    width: 150px;
+    border-radius: 50%;
+}
+/* logo end */
+.title{
+    background-color: crimson;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.title p{
+    position: relative;
+    color: transparent;
+    animation: box1 .5s ease forwards;
+    animation-delay: .3s;
+}
+.title p::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    background-color: white;
+    /* border-radius: 10px; */
+    width: 0;
+    height: 100%;
+    animation: box2 1s ease ;
+}
+/* title end */
+/* main start */
+.pdf-name{
+    /* border: solid; */
+    text-align: center;
+    background-color: aliceblue;
+}
+.pdf-name h2{
+
+}
+.pdf-name p{
+    color: rgb(107, 107, 107);
+}
+.pdf-name a{
+    color: red;
+}
+.pdf-file{
+    width: 100%;
+}
+.pdf-file embed{
+    width: 100%;
+    height: 500px;
+}
+.hr-common{
+    border: 2px dotted green;
+    margin: auto;
+    margin-bottom: 5px;
+    border-bottom: none;
+    width: 98%;    
+}
+/* main end */
+.footer-div{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+}
+/* all key ferm start */
+@keyframes box1{
+    100%{
+        color: white;
+    }
+}
+@keyframes box2{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        left: 100% ;
+        width: 0;
+    }
+}
+/* all key ferm end */
